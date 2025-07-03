@@ -8,8 +8,9 @@ This is designed to work with venv and be ran as a module. **Please use python 3
 
 Setup:
 ```
-pip install -e ./
-python -m <TODO>
+poetry install
+source .venv/bin/activate
+python -m neuromorphic_optimized_llms.<path>
 ```
 
 There are various scripts that support devops checkin-gates and utilities:
@@ -33,11 +34,8 @@ There are various scripts that support devops checkin-gates and utilities:
 ## Repo Structure
 
 #### Top-level module
-The `<TODO>` dir is the top level module. This internally contains three subgroups:
-1. model: contains model code and utility scripts
-2. analysis: for plotting
-3. rl: applying the model to different rl tasks
-4. benchmarks: applying the model to non-rl benchmarks
+The `neuromorphic_optimized_llms` dir is the top level module. This internally contains these subgroups:
+<TODO>
 
 #### Scripts
 The `./scripts` dir contains the same scripts that run all the checkin / CI automation to facilitate running locally. As well as other utilities.
@@ -46,7 +44,7 @@ The `./scripts` dir contains the same scripts that run all the checkin / CI auto
 The `./play` dir is a place to run and checkin files where the checkin rules don't apply.
 
 #### Artifacts
-The `./artifacts` dir contains all the plots that analyze the model. **Ideally this should be rebuilt and committed every time there is a model change.**. Recommend using `scripts/analysis/rebuild_analysis.sh` this to do that in one shot.
+The `./artifacts` dir contains all analysis plots. **Ideally this should be rebuilt and committed every time there is a source change.**. Recommend using `scripts/analysis/rebuild_analysis.sh` this to do that in one shot.
 
 #### Docs
 The `./docs` dir contains all relevant documentation.
