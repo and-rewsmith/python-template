@@ -10,7 +10,7 @@ Setup:
 ```
 poetry install
 source .venv/bin/activate
-python -m neuromorphic_optimized_llms.<path>
+python -m TODO.<path>
 ```
 
 There are various scripts that support devops checkin-gates and utilities:
@@ -34,7 +34,7 @@ There are various scripts that support devops checkin-gates and utilities:
 ## Repo Structure
 
 #### Top-level module
-The `neuromorphic_optimized_llms` dir is the top level module. This internally contains these subgroups:
+The `TODO` dir is the top level module. This internally contains these subgroups:
 <TODO>
 
 #### Scripts
