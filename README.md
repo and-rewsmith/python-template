@@ -19,9 +19,9 @@ There are various scripts that support devops checkin-gates and utilities:
 ./scripts/analysis/rebuild_analysis.sh 
 
 # Linting that runs in the checkin-gate before PR merge. You can run it locally
-# here. I also recommend setting up autopep8 in vscode.
+# here. 
 ./scripts/devops/mypy.sh
-./scripts/devops/pep8.sh
+./scripts/devops/black.sh
 
 # Unit tests that run in the checkin-gate before PR merge. You can run it locally
 # here.
@@ -53,5 +53,5 @@ The `./docs` dir contains all relevant documentation.
 
 To merge anything your contribution must pass checkin pipelines which ensure:
 1. Passing tests
-2. Conformance to pep8
+2. Conformance to black
 3. Conformance to mypy
